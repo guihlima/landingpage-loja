@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    
+    <!-- Style Page -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <!-- <img src="#" alt="Brand" id="nav-brand"> -->
+            <span id="nav-brand">Logo</span>
+            <form action="" id="search-form">
+                <input type="search" id="input-search" placeholder="Busque por algo aqui...">
+                <label for="search-box" class="uil uil-search"></label>
+            </form>
+
+            <ul id="nav-list">
+                <li>
+                    <i for="search-box" class="uil uil-search" id="search-btn"></i>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="uil uil-heart"></i>
+                    </a>
+                </li>
+                <li >
+                    <i class="uil uil-bars" id="nav-bar"></i>
+                </li>
+            </ul>
+
+            <div id="menu">
+                <i class="uil uil-times" id="menu-close"></i>
+                <div id="user-area">
+                    <img src="./images/user-img.png" alt="">
+                    <h3><a href="#">Nome do usuário</a></h3>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Carrinho</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main container">
+        <section class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/home-img-1.png" alt="Img1" width="250px">
+                    <div class="content">
+                        <h4>Desconto de 50%</h4>
+                        <h4>Smartphones</h4>
+                        <a href="#" id="btn-shopNow">Compre agora</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/home-img-2.png" alt="Img2" width="250px">
+                    <div class="content">
+                        <h4>Desconto de 50%</h4>
+                        <h4>Smartwatch</h4>
+                        <a href="#" id="btn-shopNow">Compre agora</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/home-img-3.png" alt="Img3" width="250px">
+                    <div class="content">
+                        <h4>Desconto de 50%</h4>
+                        <h4>Headphones</h4>
+                        <a href="#" id="btn-shopNow">Compre agora</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
+        <section class="section" id="section-arrivals">
+            <h1 id="section-title">Novos Lançamentos</h1>
+            <div id="cards">
+                <div class="card">
+                    <img src="./images/tv.jpg" alt="Imagem TV" class="card-img">
+                    <img src="./images/tv-hover.jpg" alt="Imagem TV" class="hover-img">
+                    <p class="card-description">Smart TV 50'</p>
+                    <p class="card-price">R$ 1.299,99</p>
+                </div>
+                <div class="card">
+                    <img src="./images/cel.jpg" alt="Imagem TV" class="card-img">
+                    <img src="./images/cel-hover.jpg" alt="Imagem TV" class="hover-img">
+                    <p class="card-description">Smartphone 128GB 4GB</p>
+                    <p class="card-price">R$ 999,99</p>
+                </div>
+                <div class="card">
+                    <img src="./images/hs.jpg" alt="Imagem TV" class="card-img">
+                    <img src="./images/hs-hover.jpg" alt="Imagem TV" class="hover-img">
+                    <p class="card-description">Headset preto</p>
+                    <p class="card-price">R$ 259,99</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h4>Criado por GuihLima Dev | Todos os direitos reservados</h4>
+        <img src="./images/card_img.png" alt="cards" id="credit-cards">
+            
+    </footer>
+    <!-- Swiper JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
