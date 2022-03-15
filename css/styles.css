@@ -53,6 +53,10 @@
         height: 30px;
         
     }
+
+    .header .nav #menu a{
+        color: #000;
+    }
     
     .header .nav #menu #menu-close{
         text-align: right;
@@ -81,7 +85,7 @@
     }
     .header .nav #menu #user-area{
         text-align: center;
-        border-bottom: 1px solid;
+        border-bottom: 1px solid #000;
         padding-bottom: 20px;
     }
 
@@ -480,6 +484,10 @@
     }
     .header .nav #search-form input{
         width: 100%;
+    }
+
+    .header .nav #menu.active{
+        width: 30%;
     }
 
     .main #section-arrivals #cards{
