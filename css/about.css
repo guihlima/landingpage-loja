@@ -24,7 +24,12 @@
     }
 
     .section #section-img{
-        display: none;
+        width: 90%;
+    }
+
+    .section #section-img img{
+        /* display: none; */
+        width: 100%;
     }
 
     .section #section-about{
@@ -134,4 +139,168 @@
         
     } */
 
+}
+
+@media (min-width: 568px){
+    .container{
+        margin: 0 auto;
+    }
+    .main{
+        height: 100% - 30%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+        color: #FFF;
+    }
+
+    .section{
+        margin: 0 30px;
+    }
+    .section #section-img{
+        /* display: none; */
+        width: 90%;
+    }
+
+    .section #section-img img{
+        /* display: none; */
+        width: 100%;
+    }
+    
+    .section #section-about{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section #section-about input{
+        width: 40%;
+        padding: 10px;
+        background-color: #FFF;
+        border-radius: 10px;
+        color: #0078FF;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .section #section-title{
+        color: #FFF;
+        margin: 30px 0;
+    }
+
+    /* Funcionalidade do FAQ */
+    .main #faq .accordion-container .accordion .accordion-content{
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    .main #faq .accordion-container .accordion.active .accordion-content{
+        visibility: visible;
+        height: 10%;
+        transition: .6s;
+        background-color: #FFF;
+        padding: 10px;
+        color: #3F3F3F;
+    }
+
+    .main #faq .accordion-container .accordion .accordion-heading ion-icon{
+        transition: .6s;
+    }
+
+    .main #faq .accordion-container .accordion.active .accordion-heading ion-icon{
+        transform: rotate(180deg);
+        transition: .6s;
+    }
+
+    /* Personalização do botão FAQ */
+    .main #faq .accordion-container .accordion.active .accordion-heading{
+        background-color: #0078FF;
+        transition: .6s;
+        
+    }
+
+    .main #faq .accordion-container .accordion .accordion-heading h3{
+        font-size: 1rem;
+        width: 90%;
+        color: #3F3F3F;
+        transition: .6s;
+    }
+
+    .main #faq .accordion-container .accordion.active .accordion-heading h3, 
+    .main #faq .accordion-container .accordion.active .accordion-heading ion-icon{
+        color: #FFF;
+        transition: .6s;
+    }
+
+    main #faq .accordion-container .accordion{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main #faq .accordion-container .accordion .accordion-heading{
+        background-color: rgba(255, 255, 255, .5);
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+        transition: .6s;
+        cursor: pointer;
+    }
+
+
+    .main #faq .accordion-container .accordion .accordion-heading ion-icon{
+        color: #3F3F3F;
+    }
+}
+
+@media (min-width: 768px){
+    .section #section-img{
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main{
+        /* background-color: blue; */
+    }
+
+    .section:first-child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    .section #section-img{
+        width: 40%;
+    }
+    .section #section-about{
+        width: 50%;
+        padding: 10px;
+        /* display: flex;
+        flex-direction: column; */
+        /* gap: 20px; */
+    }
+    .section #section-about p{
+        width: 80%;
+    }
+
+    .section #section-about input{
+        width: 35%;
+        padding: 15px;
+    }
+    .main #faq{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .main #faq .accordion-container .accordion{
+        width: 70%;
+        margin: 20px auto;
+    }
 }
