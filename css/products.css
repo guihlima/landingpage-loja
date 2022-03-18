@@ -1,0 +1,458 @@
+@import url(./reset.css);
+@import url(./header.css);
+@import url(./footer.css);
+
+@media (max-width: 568px){
+    .main{
+        width: 100%;
+        height: 100% - 30%;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    .section{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #section-category{
+    }
+    .section .section-title{
+        color: #3F3F3F;
+    }
+    .section .section-title .title-contrast{
+        color: #0078FF;
+    }
+
+    #section-category #grid-container #grid-content{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+        
+        
+    }
+
+    #section-category #grid-container #grid-content .grid-content-card{
+        background-color: #FFF;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 30px;
+        width: 90%;
+        height: 200px;
+        border-radius: 5px;
+        border: 1px solid;
+        gap: 20px;
+        margin: 0 auto;
+    }
+
+    #section-category #grid-container #grid-content .grid-content-card:hover{
+        background-color: #3F3F3F;
+        color: #FFF;
+    }
+
+    #section-category #grid-container #grid-content .grid-content-card img{
+        width: 80%;
+    }
+
+    #section-category #grid-container #grid-content .grid-content-card h2{
+        font-size: 1.1rem;
+        
+        text-align: center;
+    }
+
+    #section-featured #grid-container #grid-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card{
+        position: relative;
+        width: 90%;
+        background-color: #FFF;
+        border: 1px solid;
+        margin: 0 auto;
+        padding: 5px 0;
+        border-radius: 5px;
+        
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-image{
+        /* position: relative; */
+        padding: 30px;
+        display: flex;
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-image img{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-image img+img{
+        display: none;
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-image .grid-icons{
+        position: absolute;
+        top:10px;
+        left: 0rem;
+        /* display: none; */
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        z-index: -100;
+    }
+
+    /* Hover card aparecer icons */
+    #section-featured #grid-container #grid-content .grid-content-card .card-image:hover .grid-icons{
+        left: 1rem;
+        z-index: 100;
+        transition: .6s;
+        visibility: visible;
+    }
+
+    /* Hover card mudar imagem */
+    #section-featured #grid-container #grid-content .grid-content-card .card-image:hover img:first-child{
+        display: none;
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-image:hover img+img{
+        display: block;
+        
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-image .grid-icons li{
+        width: 100%;
+        /* padding: 10px; */
+        background-color: #3F3F3F;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-image .grid-icons li .icon{
+        color: #FFF;
+        font-size: 1.2rem;
+        /* padding: 10px; */
+        /* height:10px; */
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-description{
+        text-align: center;
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-image .grid-icons li:hover{
+        background-color: #0078FF;
+    }
+
+    /* Section Promoções do dia */
+    #section-news #grid-container #grid-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    #section-news #grid-container #grid-content .grid-content-card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        background-color: #FFF;
+        padding: 10px;
+        border-radius: 5px;
+        
+    }
+
+    #section-news #grid-container #grid-content .grid-content-card .card-description{
+        /* display: flex; */
+        width: 80%;
+        font-size: .8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #section-news #grid-container #grid-content .grid-content-card .card-description h2:first-child{
+        color: #0984e3;
+        font-size: .9rem;
+    }
+
+    #section-news #grid-container #grid-content .grid-content-card .card-description input{
+        background-color: #0078FF;
+        border: none;
+        padding: 10px;
+        color: #FFF;
+        border-radius: 5px;
+        width: 60%;
+        cursor: pointer;
+    }
+
+    #section-news #grid-container #grid-content .grid-content-card .card-image{
+        width: 50%;
+    }
+    #section-news #grid-container #grid-content .grid-content-card .card-image img{
+        width: 100%;
+    }
+    
+    /* Aumentar imagem do card */
+    #section-news #grid-container #grid-content .grid-content-card:hover img{
+        transform: scale(1.2);
+    }
+}
+
+@media (min-width: 568px) {
+    .main{
+        width: 100%;
+        height: 100% - 30%;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .section{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .section .section-title{
+        color: #3F3F3F;
+    }
+    .section .section-title .title-contrast{
+        color: #0078FF;
+    }
+
+    #section-category #grid-container #grid-content{
+        /* margin: 0 auto; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+
+    #section-category #grid-container #grid-content .grid-content-card{
+        background-color: #FFF;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 30px;
+        width: 90%;
+        height: 220px;
+        border-radius: 5px;
+        border: 1px solid;
+        gap: 20px;
+        margin: 0 auto;
+    }
+
+    #section-category #grid-container #grid-content .grid-content-card:hover{
+        background-color: #3F3F3F;
+        color: #FFF;
+    }
+
+    #section-category #grid-container #grid-content .grid-content-card img{
+        width: 80%;
+    }
+
+    #section-category #grid-container #grid-content .grid-content-card h2{
+        font-size: 1.1rem;
+        
+        text-align: center;
+    }
+
+    #section-featured #grid-container #grid-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        margin: 0 auto;
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card{
+        position: relative;
+        width: 60%;
+        background-color: #FFF;
+        border: 1px solid;
+        margin: 0 auto;
+        padding: 5px 0;
+        border-radius: 5px;
+        
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-image{
+        /* position: relative; */
+        padding: 30px;
+        display: flex;
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-image img{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-image img+img{
+        display: none;
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-image .grid-icons{
+        position: absolute;
+        top:10px;
+        left: 0rem;
+        /* display: none; */
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        z-index: -100;
+    }
+
+    /* Hover card aparecer icons */
+    #section-featured #grid-container #grid-content .grid-content-card .card-image:hover .grid-icons{
+        left: 1rem;
+        z-index: 100;
+        transition: .6s;
+        visibility: visible;
+    }
+
+    /* Hover card mudar imagem */
+    #section-featured #grid-container #grid-content .grid-content-card .card-image:hover img:first-child{
+        display: none;
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-image:hover img+img{
+        display: block;
+        
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-image .grid-icons li{
+        width: 100%;
+        /* padding: 10px; */
+        background-color: #3F3F3F;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-image .grid-icons li .icon{
+        color: #FFF;
+        font-size: 1.2rem;
+        /* padding: 10px; */
+        /* height:10px; */
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-description{
+        text-align: center;
+    }
+
+    #section-featured #grid-container #grid-content .grid-content-card .card-image .grid-icons li:hover{
+        background-color: #0078FF;
+    }
+
+    /* Section Promoções do dia */
+    #section-news #grid-container #grid-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    #section-news #grid-container #grid-content .grid-content-card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        background-color: #FFF;
+        padding: 10px;
+        border-radius: 5px;
+        
+    }
+
+    #section-news #grid-container #grid-content .grid-content-card .card-description{
+        /* display: flex; */
+        width: 80%;
+        font-size: .8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #section-news #grid-container #grid-content .grid-content-card .card-description h2:first-child{
+        color: #0984e3;
+        font-size: .9rem;
+    }
+
+    #section-news #grid-container #grid-content .grid-content-card .card-description input{
+        background-color: #0078FF;
+        border: none;
+        padding: 10px;
+        color: #FFF;
+        border-radius: 5px;
+        width: 60%;
+        cursor: pointer;
+    }
+
+    #section-news #grid-container #grid-content .grid-content-card .card-image{
+        width: 50%;
+    }
+    #section-news #grid-container #grid-content .grid-content-card .card-image img{
+        width: 100%;
+    }
+    
+    /* Aumentar imagem do card */
+    #section-news #grid-container #grid-content .grid-content-card:hover img{
+        transform: scale(1.2);
+    }
+}
+
+@media(min-width: 768px){
+    #section-category #grid-container #grid-content{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #section-featured #grid-container #grid-content{
+        grid-template-columns: 1fr 1fr;
+        /* row-gap:-100px; */
+    }
+    #section-featured #grid-container #grid-content .grid-content-card{
+        width: 80%;
+    }
+
+    #section-news #grid-container #grid-content .grid-content-card{
+        width: 90%;
+        justify-content: space-evenly;
+    }
+
+    #section-news #grid-container #grid-content .grid-content-card .card-description{
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media(min-width: 1024px){
+    #section-category #grid-container #grid-content{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #section-featured #grid-container #grid-content{
+        grid-template-columns: 1fr 1fr;
+        /* row-gap:-100px; */
+    }
+    #section-news #grid-container #grid-content{
+        width: 90%;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+}

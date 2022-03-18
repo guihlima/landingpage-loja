@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- CSS About -->
+    <link rel="stylesheet" href="../css/products.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="../"><img src="../images/logo.png" alt="Brand" id="nav-brand"></a>
+            <!-- <span id="nav-brand">Logo</span> -->
+            <form action="" id="search-form">
+                <input type="search" id="input-search" placeholder="Busque por algo aqui...">
+                <label for="search-box" class="uil uil-search"></label>
+            </form>
+
+            <ul id="nav-list">
+                <li>
+                    <i for="search-box" class="uil uil-search" id="search-btn"></i>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="uil uil-heart"></i>
+                    </a>
+                </li>
+                <li >
+                    <i class="uil uil-bars" id="nav-bar"></i>
+                </li>
+            </ul>
+
+            <div id="menu">
+                <i class="uil uil-times" id="menu-close"></i>
+                <div id="user-area">
+                    <img src="../images/user-img.png" alt="">
+                    <h3><a href="#">Nome do usuário</a></h3>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Carrinho</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="section-category" class="section">
+            <h1 class="section-title">
+                Compre por <span class="title-contrast">categoria</span>
+            </h1>
+
+            <div id="grid-container">
+                <div id="grid-content">
+                    <div class="grid-content-card">
+                        <img src="../images/cat_img1.png" alt="categoria-tv">
+                        <h2>Televisores</h2>
+                    </div>
+                    <div class="grid-content-card">
+                        <img src="../images/cat_img2.png" alt="categoria-smartphones">
+                        <h2>Smartphones</h2>
+                    </div>
+                    <div class="grid-content-card">
+                        <img src="../images/cat_img3.png" alt="categoria-fones">
+                        <h2>Fones de Ouvido</h2>
+                    </div>
+                    <div class="grid-content-card">
+                        <img src="../images/cat_img4.png" alt="categoria-relogios">
+                        <h2>Relógios Inteligentes</h2>
+                    </div>
+                    <div class="grid-content-card">
+                        <img src="../images/cat_img5.png" alt="categoria-jogos">
+                        <h2>Jogos</h2>
+                    </div>
+                    <div class="grid-content-card">
+                        <img src="../images/cat_img6.png" alt="categoria-cameras">
+                        <h2>Câmeras</h2>
+                    </div>
+                    <div class="grid-content-card">
+                        <img src="../images/cat_img7.png" alt="categoria-caixas">
+                        <h2>Caixas de Som</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="section-featured">
+            <h1 class="section-title">
+                Produtos em <span class="title-contrast">destaque</span>
+            </h1>
+
+            <div id="grid-container">
+                <div id="grid-content">
+                    <div class="grid-content-card">
+                        <div class="card-image">
+                            <img src="../images/product-1.jpg" alt="smartphone">
+                            <img src="../images/product-1-hover.jpg" alt="smartphone-hover">
+                            <ul class="grid-icons">
+                                <li>
+                                    <ion-icon name="cart-outline" class="icon"></ion-icon>
+                                </li>
+                                <li>
+                                    <i class="uil uil-search-plus icon"></i>
+                                </li>
+                                <li>
+                                    <i class="uil uil-heart-alt icon"></i>
+                                </li>
+                                <li>
+                                    <i class="uil uil-share icon"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-description">
+                            <h3>Smartphone</h3>
+                            <p class="card-price">R$ 1.299,99</p>
+                        </div>
+                    </div>
+                    <div class="grid-content-card">
+                        <div class="card-image">
+                            <img src="../images/product-5.jpg" alt="speaker">
+                            <img src="../images/product-5-hover.jpg" alt="speaker-hover">
+                            <ul class="grid-icons">
+                                <li>
+                                    <ion-icon name="cart-outline" class="icon"></ion-icon>
+                                </li>
+                                <li>
+                                    <i class="uil uil-search-plus icon"></i>
+                                </li>
+                                <li>
+                                    <i class="uil uil-heart-alt icon"></i>
+                                </li>
+                                <li>
+                                    <i class="uil uil-share icon"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-description">
+                            <h3>Speaker</h3>
+                            <p class="card-price">R$ 699,99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="section-news">
+            <h1 class="section-title">
+                <span class="title-contrast">Promoções</span> do dia
+            </h1>
+
+            <div id="grid-container">
+                <div id="grid-content">
+                    <div class="grid-content-card">
+                        <div class="card-description">
+                            <h2>Oferta Especial</h2>
+                            <h2>Até 50% de desconto</h2>
+                            <input type="button" value="Compre Agora">
+                        </div>
+                        <div class="card-image">
+                            <img src="../images/product-banner-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="grid-content-card">
+                        <div class="card-description">
+                            <h2>Oferta Especial</h2>
+                            <h2>Até 50% de desconto</h2>
+                            <input type="button" value="Compre Agora">
+                        </div>
+                        <div class="card-image">
+                            <img src="../images/product-banner-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h4>Criado por GuihLima Dev | Todos os direitos reservados</h4>
+        <img src="../images/card_img.png" alt="cards" id="credit-cards">
+            
+    </footer>
+
+    <!-- <script src="../js/about.js"></script> -->
+    <script src="../js/main.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

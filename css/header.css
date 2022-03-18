@@ -5,6 +5,11 @@
         background: rgba(255, 255, 255, 0.5);
         
     }
+
+    .header .nav.container{
+        width: 80%;
+        margin: 0 auto;
+    }
     
     .header .nav{
         height: 100%;
@@ -17,7 +22,7 @@
     }
 
     .header #nav-brand{
-        width: 43%;
+        width: 60%;
     }
 
     .header .nav #search-form{
@@ -125,6 +130,10 @@
     .header{
         background: rgba(255, 255, 255, 0.5);
         height: 10%;
+    }
+    .header .nav.container{
+        width: 80%;
+        margin: 0 auto;
     }
     .header .nav{
         width: 90%;
@@ -246,6 +255,10 @@
     }
 }
 @media (min-width: 1024px) {
+    .header .nav.container{
+        width: 85%;
+        margin: 0 auto;
+    }
     .header .nav{
         width: 70%;
     }
