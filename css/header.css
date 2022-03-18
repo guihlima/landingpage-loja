@@ -16,13 +16,15 @@
         display: flex;
         gap: 20px;
         align-items: center;
-        justify-content: space-around;
-        font-size: 1.2rem;      
+        justify-content: space-around;     
+        font-size: 1.4rem;
         color: #FFF;
     }
-
+    .header .nav a{
+        width: 40%;
+    }
     .header #nav-brand{
-        width: 60%;
+        width: 100%;
     }
 
     .header .nav #search-form{
